@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bookcataloguer"
+version = "0.1.0"
+description = ""
+authors = ["skostousov <93064193+skostousov@users.noreply.github.com>"]
+readme = "README.md"
+
+packages = [
+    {include = "utils", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = ">=4.11.0.86,<5.0.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
